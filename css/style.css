@@ -1,0 +1,351 @@
+/*& --------------------------- Start General Style --------------------------- */
+body
+{
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 400px;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Poppins", sans-serif;
+}
+ h3
+{
+  position: relative;
+  z-index: 4;
+}
+ h3::after
+{
+  content: "";
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    background-image: url(../photos/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+/*& --------------------------- Start Header Style --------------------------- */
+.home
+{
+    background-image: linear-gradient(#0009,#0009) ,url(../photos/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.home h1::after
+{
+    content:" |";
+    font-weight: 600;
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.1s;
+}
+.home container
+{
+    padding:40px;
+}
+@keyframes typing
+{
+    0%{content:" |"}
+    2%{content:" L|"}
+    4%{content:" La|"}
+    6%{content:" Lar|"}
+    8%{content:" Larr|"}
+    10%{content:" Larry|"}
+    12%{content:" Larry |"}
+    14%{content:" Larry D|"}
+    16%{content:" Larry Da|"}
+    18%{content:" Larry Dan|"}
+    20%{content:" Larry Dani|"}
+    22%{content:" Larry Danie|"}
+    24%{content:" Larry Daniel|"}
+    26%{content:" Larry Daniels|"}
+    28%{content:" Larry Daniel|"}
+    30%{content:" Larry Danie|"}
+    32%{content:" Larry Dani|"}
+    34%{content:" Larry Dan|"}
+    36%{content:" Larry Da|"}
+    38%{content:" Larry D|"}
+    40%{content:" Larry |"}
+    42%{content:" Larry|"}
+    44%{content:" Larr|"}
+    46%{content:" Lar|"}
+    48%{content:" La|"}
+    50%{content:" L|"}
+    52%{content:" |"}
+    54%{content:" D|"}
+    56%{content:" De|"}
+    58%{content:" Dev|"}
+    60%{content:" Deve|"}
+    62%{content:" Devel|"}
+    64%{content:" Develo|"}
+    66%{content:" Develop|"}
+    68%{content:" Develope|"}
+    70%{content:" Developer|"}
+    72%{content:" Develope|"}
+    74%{content:" Develop|"}
+    76%{content:" Develo|"}
+    78%{content:" Devel|"}
+    80%{content:" Deve|"}
+    82%{content:" Dev|"}
+    84%{content:" De|"}
+    86%{content:" |"}
+    88%{content:" D|"}
+    90%{content:" Des|"}
+    92%{content:" Desi|"}
+    94%{content:" Desig|"}
+    96%{content:" Design|"}
+    98%{content:" Designe|"}
+    100%{content:" Designer|"}
+}
+.home h5::after
+{
+    content:"|";
+    animation-name: pulsing;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    font-weight: 200;
+    position: fixed;
+    margin-left: -7px;
+}
+@keyframes pulsing
+{
+    0%{content:"|"}
+    50%{content:""}
+    100%{content:"|"}
+}
+a
+{
+    cursor: p;
+}
+.home .home-icons  span
+{
+   width:80px;
+   background-color: rgba(0,0,0,0.3);
+   height: 80px;
+   line-height: 80px;
+   
+}
+/*& --------------------------- Start About Style --------------------------- */
+.about .img-hero::after
+{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -15px;
+    bottom: -30px;
+    background-image: url(../photos/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about .h-custom
+{
+    height:25px;
+}
+.about .buttons  span btn1 a
+{
+    transition: all 34ms;
+}
+.about .buttons .btn1 a:hover
+{
+    background-color: white !important;
+    color:black !important;
+    border: black solid 1px;
+}
+.about .buttons  span btn2 a
+{
+    transition: all 4ms;
+}
+.about h3
+{
+    position: relative;
+}
+.about h3::after
+{
+    content: "UI / UX DESIGNER & WEB DEVELOPER";
+    color: #999;
+    font-weight: 400;
+    font-size: 1rem;
+    position: absolute;
+    left:0;
+    bottom: -20px;
+}
+.about .buttons .btn2 a:hover
+{
+    background-color: black !important;
+    color:white !important;
+    border: black solid 1px;
+}
+/*& --------------------------- Start Services Style --------------------------- */
+.services .container .icon
+{
+  height:70px;
+  width:70px;
+}
+.services .container
+{
+  width:86%;
+}
+.services .container .item
+{
+  transition: all 2s;
+}
+.services .container .item:hover .icon 
+{
+  background-color: #000 !important;
+  color: white;
+}
+/*& --------------------------- Start Portfolio Style --------------------------- */
+.portfolio .container
+{
+  width:86%;
+}
+ .portfolio .item
+ {
+  position: relative;
+ }
+.portfolio .overlay
+{
+  position:absolute;
+  top:-5px;
+  bottom:15px;
+  left:5px;
+  right:5px;
+  padding:0;
+  margin:0;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+transition: all 0.5s;
+ transform: translateY(10px);
+}
+.portfolio .overlay:hover
+{
+  opacity:1;
+}
+.portfolio .overlay a
+{
+  width:30px;
+  height:30px;
+ 
+}
+.portfolio .overlay span:hover  a
+{
+ 
+  background-color: #09c;
+  border: solid 1px black;
+ 
+}
+/*& --------------------------- Start Testimonials Style --------------------------- */
+.testimonials .client-img
+{
+  width:90px;
+}
+.testimonials .container
+{
+  width:86%;
+}
+.sm-font
+{
+  font-size: 12px;
+
+}
+.testimonials .carousel-indicators [data-bs-target]
+{
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background-color: #D6D6D6;
+}
+/*& --------------------------- Start Team Style --------------------------- */
+.bg-custom
+{
+  background-color: #343434;
+}
+ .team .layer
+{
+  position:absolute;
+  top:7px;
+  bottom: 21%;
+  left:5px;
+  right:5px;
+  background-color: white;
+  visibility: hidden;
+}
+.team .container
+{
+  width:86%;
+}
+.team .layer span
+{
+  background-color: #000 !important;
+  color:white !important;
+   width:80px;
+   height: 80px;
+   line-height: 80px;
+   transition: all 0.05s;
+}
+.team .layer span:hover
+{
+  background-color: #09c !important;
+  border:solid black 1px;
+ 
+}
+.team .card img
+{
+  transition: all 0.5s;
+}
+.team .card img:hover
+{
+  transform: scale(1.1,1.1);
+
+} 
+.team .layer
+{
+  transition:1s 0.5s  all;
+
+}
+.team .card:hover .layer
+{
+  visibility: visible;
+  transform:rotate(360deg) ;
+
+}
+/*& --------------------------- Start Contact Style --------------------------- */
+.contact span
+{
+  width:70px;
+  height:70px;
+  transition:all 0.5s;
+}
+.contact span:hover
+{
+  color:white !important;
+  background-color: black !important;
+
+}
+.bg-gray
+{
+  background-color:#f4f4f4;
+}
+.text-gray
+{
+  color:gray;
+}
+.contact .btn-submit
+{
+  transition: all 0.5s;
+}
+.contact .btn-submit:hover
+{
+  background-color: white !important;
+  color:black !important;
+  border:solid 1px black !important;
+}
+/*& --------------------------- Start Footer Style --------------------------- */
+footer
+{
+background-color: #1c1c1c;
+}
